@@ -1,3 +1,10 @@
+---
+output:
+  html_document:
+    keep_md: true
+  md_document:
+    variant: markdown_github
+---
 A pacakge of R markdown templates.
 
 Currently, there's one `gbccmarkdown::default` :-)
@@ -10,7 +17,7 @@ Alternately, you could just start a blank R markdown document and replace the YA
     ---
     title: "Analysis Title"
     author: "GBCC Author"
-    date: "2016-01-29"
+    date: "`r Sys.Date()`"
     course: "DATA 210G Elements of Data Science"
     output: gbccmarkdown::default
     ---

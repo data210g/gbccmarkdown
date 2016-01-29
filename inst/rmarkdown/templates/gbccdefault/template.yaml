@@ -1,0 +1,4 @@
+name: GBCC Default Template
+description: >
+  Standard template for GBCC analysis documents
+create_dir: true
