@@ -1,4 +1,4 @@
-A pacakge of R markdown templates.
+A package of R markdown templates.
 
 Currently, there's one `gbccmarkdown::default` :-)
 
