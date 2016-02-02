@@ -29,13 +29,7 @@ $if(highlightjs)$
       href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css"
       $if(html5)$$else$type="text/css" $endif$/>
 <script src="$highlightjs$/highlight.js"></script>
-$if(theme)$
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-$endif$
+
 <script type="text/javascript">
 if (window.hljs && document.readyState && document.readyState === "complete") {
    window.setTimeout(function() {
@@ -50,13 +44,7 @@ $if(highlighting-css)$
 <style type="text/css">
 $highlighting-css$
 </style>
-$if(theme)$
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-$endif$
+
 $endif$
 
 $for(css)$
@@ -67,24 +55,9 @@ $endfor$
 
 <body>
 
-$if(theme)$
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-</style>
-<div class="container-fluid main-container">
-$endif$
+<div class="container main-container">
+<div class="row">
+    <div class="one column">
 
 <div><h1 class="gbccheader">GBCC</h1></div>
 
@@ -129,18 +102,9 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-$if(theme)$
+    </div>
+  </div>
 </div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-$$(document).ready(function () {
-  $$('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
-</script>
-$endif$
 
 $if(mathjax-url)$
 <!-- dynamically load mathjax for compatibility with self-contained -->

@@ -8,7 +8,7 @@
 default <- function(toc = FALSE, toc_depth = 3, number_sections = FALSE,
                     fig_width = 7, fig_height = 5, fig_retina = if (!fig_caption) 2,
                     fig_caption = FALSE, dev = "png", smart = TRUE, self_contained = TRUE,
-                    theme = "default", highlight = "tango", mathjax = "default",
+                    theme = NULL, highlight = "tango", mathjax = "default",
                     template = "default", css = NULL, includes = NULL, keep_md = TRUE,
                     lib_dir = NULL, md_extensions = NULL, pandoc_args = NULL,
                     ...) {
